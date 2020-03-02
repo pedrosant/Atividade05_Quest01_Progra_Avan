@@ -27,8 +27,8 @@ bool VetorDinamico::add(bool elemento) {
 }
 
 int VetorDinamico::add(int index, int elemento) {
-	int vetor[index] = elemento;
-	return vetor;
+	
+	return ;
 }
 
 void VetorDinamico::clean(int vetor[]) {
