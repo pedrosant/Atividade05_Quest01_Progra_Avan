@@ -27,17 +27,17 @@ bool VetorDinamico::add(bool elemento) {
 }
 
 int VetorDinamico::add(int index, int elemento) {
-	vetor[index] = elemento;
+	int vetor[index] = elemento;
 	return vetor;
 }
 
-void VetorDinamico::clean(int vetor) {
+void VetorDinamico::clean(int vetor[]) {
 	for (int i = 0; i < sizeof(vetor) / sizeof(vetor[0]); i++) {
 		clean(vetor);
 	}
 }
 
-bool VetorDinamico::contains(int vetor, int elemento) {
+bool VetorDinamico::contains(int vetor[], int elemento) {
 	bool resultado;
 	for (int i = 0; i < sizeof(vetor) / sizeof(vetor[0]); i++) {
 		if (this->vetor[i] == elemento) {
@@ -101,8 +101,8 @@ void VetorDinamico::resize(int tamanhoAumentado) {
 
 }
 
-void VetorDinamico::imprimir(vetor[]) {
+void VetorDinamico::imprimir(int vetor[]) {
 	for (int i = 0; i < sizeof(vetor) / sizeof(vetor[0]); i++){
-		cout "Vetor"<< vetor[i];
+		cout << "Vetor" << vetor[i];
 	}
 }
